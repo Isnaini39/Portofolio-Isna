@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Isnaini Nur Hasanah - Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-pink': '#be185d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 scroll-smooth">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-md z-50 border-b border-pink-900/30">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 bg-clip-text text-transparent">Isnaini Nur Hasanah</h1>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-pink-400 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-pink-400 transition">About</a></li>
+                <li><a href="#skills" class="hover:text-pink-400 transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-pink-400 transition">Projects</a></li>
+                <li><a href="#certificates" class="hover:text-pink-400 transition">certificates</a></li>
+                <li><a href="#contact" class="hover:text-pink-400 transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-pink-400" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div class="hidden md:hidden bg-gray-900/95 border-t border-pink-900/30" id="mobile-menu">
+            <ul class="flex flex-col space-y-4 px-6 py-8">
+                <li><a href="#home" class="hover:text-pink-400 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-pink-400 transition">About</a></li>
+                <li><a href="#skills" class="hover:text-pink-400 transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-pink-400 transition">Projects</a></li>
+                <li><a href="#certificates" class="hover:text-pink-400 transition">Certificates</a></li>
+                <li><a href="#contact" class="hover:text-pink-400 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-pink-900/40 via-purple-900/30 to-gray-900"></div>
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <span class="bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 bg-clip-text text-transparent">
+                    Hi, I'm Isnaini Nur Hasanah
+                </span>
+            </h1>
+            <p class="text-2xl md:text-4xl mb-6 text-pink-200">Data Scientist</p>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-12 text-gray-300">
+                Saya mengubah data mentah menjadi insight bernilai tinggi menggunakan machine learning, statistik, dan visualisasi data yang powerful.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#projects" class="px-10 py-4 bg-gradient-to-r from-pink-600 to-pink-700 rounded-full font-semibold hover:from-pink-700 hover:to-pink-800 transition shadow-xl">
+                    Lihat Projects Saya
+                </a>
+                <a href="#contact" class="px-10 py-4 border-2 border-pink-600 rounded-full font-semibold hover:bg-pink-600/20 transition">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+ <!-- About Section -->
+<section id="about" class="py-24 bg-gray-800/40">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent">
+            Tentang Saya
+        </h2>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1">
+                <p class="text-lg leading-relaxed mb-6">
+                    Saya adalah seorang <strong>Data Scientist</strong> dengan pengalaman X tahun dalam mengolah data besar, membangun model machine learning, dan menyajikan insight yang actionable untuk bisnis.
+                </p>
+                <p class="text-lg leading-relaxed mb-8">
+                    Saya menyukai tantangan menggali pola tersembunyi dari data kompleks dan mengkomunikasikannya melalui visualisasi yang jelas serta cerita yang impactful. Pendekatan saya selalu berbasis data-driven dengan sentuhan kreativitas.
+                </p>
+                <div class="flex space-x-8">
+                    <a href="#" class="text-pink-400 hover:text-pink-300 text-3xl"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-pink-400 hover:text-pink-300 text-3xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-pink-400 hover:text-pink-300 text-3xl"><i class="fab fa-kaggle"></i></a>
+                    <a href="#" class="text-pink-400 hover:text-pink-300 text-3xl"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="relative group">
+                    <img src="isna.jpeg" alt="Isna - Data Scientist" 
+                         class="rounded-3xl shadow-2xl w-full max-w-md object-cover transition-transform duration-500 group-hover:scale-105">
+                    <!-- Overlay hanya muncul saat hover untuk efek subtle -->
+                    <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-pink-600/0 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent">
+                Skills & Tools
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-gradient-to-br from-pink-800/80 to-pink-900 p-8 rounded-2xl text-center hover:scale-110 transition shadow-xl">
+                    <i class="fab fa-python text-5xl mb-4 text-pink-300"></i>
+                    <p class="font-semibold">Python</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-800/80 to-pink-900 p-8 rounded-2xl text-center hover:scale-110 transition shadow-xl">
+                    <i class="fas fa-database text-5xl mb-4 text-pink-300"></i>
+                    <p class="font-semibold">SQL</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-800/80 to-pink-900 p-8 rounded-2xl text-center hover:scale-110 transition shadow-xl">
+                    <img src="https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/go/logo.png" alt="TensorFlow" class="w-16 h-16 mx-auto mb-4">
+                    <p class="font-semibold">TensorFlow / PyTorch</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-800/80 to-pink-900 p-8 rounded-2xl text-center hover:scale-110 transition shadow-xl">
+                    <i class="fas fa-chart-line text-5xl mb-4 text-pink-300"></i>
+                    <p class="font-semibold">Power BI / Tableau</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-800/80 to-pink-900 p-8 rounded-2xl text-center hover:scale-110 transition shadow-xl">
+                    <p class="text-4xl font-bold mb-4 text-pink-300">pandas</p>
+                    <p class="font-semibold">Pandas & NumPy</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-800/80 to-pink-900 p-8 rounded-2xl text-center hover:scale-110 transition shadow-xl">
+                    <p class="text-4xl font-bold mb-4 text-pink-300">scikit</p>
+                    <p class="font-semibold">Scikit-learn</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-800/80 to-pink-900 p-8 rounded-2xl text-center hover:scale-110 transition shadow-xl">
+                    <i class="fas fa-cloud text-5xl mb-4 text-pink-300"></i>
+                    <p class="font-semibold">AWS / GCP</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-800/80 to-pink-900 p-8 rounded-2xl text-center hover:scale-110 transition shadow-xl">
+                    <i class="fas fa-git-alt text-5xl mb-4 text-pink-300"></i>
+                    <p class="font-semibold">Git & Docker</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-800/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent">
+                Projects
+            </h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-gray-900/80 rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-800/60 transition group">
+                    <div class="h-64 bg-gradient-to-br from-pink-700 to-purple-800 flex items-center justify-center">
+                        <i class="fas fa-brain text-8xl text-pink-300/50"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
+                            Prediksi Churn Pelanggan (ML)
+                        </h3>
+                        <p class="mb-6 text-gray-400">
+                            Model klasifikasi dengan XGBoost & Random Forest untuk memprediksi churn pelanggan telekomunikasi. Akurasi 92%.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">XGBoost</span>
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900/80 rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-800/60 transition group">
+                    <div class="h-64 bg-gradient-to-br from-pink-700 to-purple-800 flex items-center justify-center">
+                        <i class="fas fa-chart-pie text-8xl text-pink-300/50"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
+                            Dashboard Analisis Penjualan
+                        </h3>
+                        <p class="mb-6 text-gray-400">
+                            Interactive dashboard dengan Power BI untuk memantau KPI penjualan retail nasional secara real-time.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">Power BI</span>
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">DAX</span>
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900/80 rounded-3xl overflow-hidden shadow-2xl hover:shadow-pink-800/60 transition group">
+                    <div class="h-64 bg-gradient-to-br from-pink-700 to-purple-800 flex items-center justify-center">
+                        <i class="fas fa-robot text-8xl text-pink-300/50"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
+                            Deteksi Anomali Transaksi
+                        </h3>
+                        <p class="mb-6 text-gray-400">
+                            Sistem deteksi fraud menggunakan Isolation Forest dan Autoencoder pada data transaksi kartu kredit.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">PyTorch</span>
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">Pandas</span>
+                            <span class="px-3 py-1 bg-pink-900/50 rounded-full text-sm">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+<section id="certificates" class="py-24 bg-gray-800/40">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent">
+            Sertifikat & Achievement
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Sertifikat 1 -->
+            <div class="group bg-gray-900/80 rounded-3xl overflow-hidden shadow-xl hover:shadow-pink-800/50 hover:-translate-y-4 transition-all duration-500">
+                <div class="h-64 bg-gradient-to-br from-pink-900/50 to-purple-900/30 flex items-center justify-center p-8">
+                    <img src="ibm.jpeg" 
+                         alt="IBM Data Classification and Summarization" 
+                         class="rounded-2xl shadow-2xl max-h-full object-contain">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl font-bold mb-2">IBM Data Classification and Summarization</h3>
+                    <p class="text-pink-300 text-sm mb-4">Coursera | 2024</p>
+                    <a href="#" class="text-pink-400 hover:underline text-sm">Lihat Credential →</a>
+                </div>
+            </div>
+
+            <!-- Sertifikat 2 -->
+            <div class="group bg-gray-900/80 rounded-3xl overflow-hidden shadow-xl hover:shadow-pink-800/50 hover:-translate-y-4 transition-all duration-500">
+                <div class="h-64 bg-gradient-to-br from-pink-900/50 to-purple-900/30 flex items-center justify-center p-8">
+                    <img src="sic.jpeg" 
+                         alt="Samsung Innovation Campus" 
+                         class="rounded-2xl shadow-2xl max-h-full object-contain">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl font-bold mb-2">Samsung Innovation Campus</h3>
+                    <p class="text-pink-300 text-sm mb-4">Coursera | 2025</p>
+                    <a href="#" class="text-pink-400 hover:underline text-sm">Lihat Credential →</a>
+                </div>
+            </div>
+
+            <!-- Sertifikat 3 -->
+            <div class="group bg-gray-900/80 rounded-3xl overflow-hidden shadow-xl hover:shadow-pink-800/50 hover:-translate-y-4 transition-all duration-500">
+                <div class="h-64 bg-gradient-to-br from-pink-900/50 to-purple-900/30 flex items-center justify-center p-8">
+                    <img src="revou.jpeg" 
+                         alt="RevoU Intro To Data Analytics" 
+                         class="rounded-2xl shadow-2xl max-h-full object-contain">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl font-bold mb-2">RevoU Intro To Data Analytics</h3>
+                    <p class="text-pink-300 text-sm mb-4">Microsoft | 2025</p>
+                    <a href="#" class="text-pink-400 hover:underline text-sm">Lihat Credential →</a>
+                </div>
+            </div>
+
+            <!-- Sertifikat 4 - Kaggle -->
+            <div class="group bg-gray-900/80 rounded-3xl overflow-hidden shadow-xl hover:shadow-pink-800/50 hover:-translate-y-4 transition-all duration-500">
+                <div class="h-64 bg-gradient-to-br from-pink-900/50 to-purple-900/30 flex items-center justify-center p-8">
+                    <img src="scads.jpeg" 
+                         alt="Scads Belajar SQL" 
+                         class="rounded-2xl shadow-2xl max-h-full object-contain">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl font-bold mb-2">Scads Belajar SQL</h3>
+                    <p class="text-pink-300 text-sm mb-4">Scads | 2025</p>
+                    <a href="#" class="text-pink-400 hover:underline text-sm">Lihat Credential →</a>
+                </div>
+            </div>
+
+            <!-- Tambahkan lebih banyak sesuai kebutuhan -->
+            <!-- Contoh tambahan -->
+            <div class="group bg-gray-900/80 rounded-3xl overflow-hidden shadow-xl hover:shadow-pink-800/50 hover:-translate-y-4 transition-all duration-500">
+                <div class="h-64 bg-gradient-to-br from-pink-900/50 to-purple-900/30 flex items-center justify-center p-8">
+                    <img src="Isnaini Nur Hasanah - Intro to Machine Learning.png" 
+                         alt="Kaggle Intro  To Machine Learning" 
+                         class="rounded-2xl shadow-2xl max-h-full object-contain">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl font-bold mb-2">GKaggle Intro  To Machine Learning</h3>
+                    <p class="text-pink-300 text-sm mb-4">Kaggle | 2024</p>
+                    <a href="#" class="text-pink-400 hover:underline text-sm">Lihat Credential →</a>
+                </div>
+            </div>
+
+            <div class="group bg-gray-900/80 rounded-3xl overflow-hidden shadow-xl hover:shadow-pink-800/50 hover:-translate-y-4 transition-all duration-500">
+                <div class="h-64 bg-gradient-to-br from-pink-900/50 to-purple-900/30 flex items-center justify-center p-8">
+                    <img src="kaggle panda.jpeg" 
+                         alt="Kaggle Pandas" 
+                         class="rounded-2xl shadow-2xl max-h-full object-contain">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl font-bold mb-2">Kaggle Pandas Certificate</h3>
+                    <p class="text-pink-300 text-sm mb-4">Kaggle | 2025</p>
+                    <a href="#" class="text-pink-400 hover:underline text-sm">Lihat Credential →</a>
+                </div>
+            </div>
+            <div class="group bg-gray-900/80 rounded-3xl overflow-hidden shadow-xl hover:shadow-pink-800/50 hover:-translate-y-4 transition-all duration-500">
+                <div class="h-64 bg-gradient-to-br from-pink-900/50 to-purple-900/30 flex items-center justify-center p-8">
+                    <img src="kaggle python.jpeg" 
+                         alt="Kaggle Python" 
+                         class="rounded-2xl shadow-2xl max-h-full object-contain">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl font-bold mb-2">Kaggle Python Certificate</h3>
+                    <p class="text-pink-300 text-sm mb-4">Kaggle | 2025</p>
+                    <a href="#" class="text-pink-400 hover:underline text-sm">Lihat Credential →</a>
+                </div>
+            </div>
+            <div class="group bg-gray-900/80 rounded-3xl overflow-hidden shadow-xl hover:shadow-pink-800/50 hover:-translate-y-4 transition-all duration-500">
+                <div class="h-64 bg-gradient-to-br from-pink-900/50 to-purple-900/30 flex items-center justify-center p-8">
+                    <img src="kaggle sql.jpeg" 
+                         alt="Kaggle SQL" 
+                         class="rounded-2xl shadow-2xl max-h-full object-contain">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-xl font-bold mb-2">Kaggle SQL Certificate</h3>
+                    <p class="text-pink-300 text-sm mb-4">Kaggle | 2025</p>
+                    <a href="#" class="text-pink-400 hover:underline text-sm">Lihat Credential →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent">
+                Hubungi Saya
+            </h2>
+            <div class="max-w-3xl mx-auto bg-gray-800/50 rounded-3xl p-10 shadow-2xl border border-pink-900/30">
+                <form>
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <input type="text" placeholder="Nama Lengkap" class="bg-gray-900/60 border border-pink-900/50 rounded-xl px-6 py-4 focus:border-pink-500 outline-none transition">
+                        <input type="email" placeholder="Email" class="bg-gray-900/60 border border-pink-900/50 rounded-xl px-6 py-4 focus:border-pink-500 outline-none transition">
+                    </div>
+                    <input type="text" placeholder="Subjek" class="w-full mb-8 bg-gray-900/60 border border-pink-900/50 rounded-xl px-6 py-4 focus:border-pink-500 outline-none transition">
+                    <textarea placeholder="Pesan Anda" rows="6" class="w-full mb-8 bg-gray-900/60 border border-pink-900/50 rounded-xl px-6 py-4 focus:border-pink-500 outline-none transition resize-none"></textarea>
+                    <button type="submit" class="w-full py-5 bg-gradient-to-r from-pink-600 to-pink-700 rounded-xl font-semibold text-lg hover:from-pink-700 hover:to-pink-800 transition shadow-xl">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 border-t border-pink-900/30 text-center">
+        <p class="text-gray-400">© 2026 Isnaini Nur Hasanah. Data Scientist & Machine Learning Enthusiast.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
